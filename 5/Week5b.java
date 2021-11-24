@@ -3,7 +3,7 @@ public class Week5b {
 		
 
 		String str = new String("Abcdabsa");
-		System.out.println(str.toLowerCase());
+		System.out.println(str.toLowerCase()); //abcdabsa
 	}
 }
 /*

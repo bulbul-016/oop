@@ -36,7 +36,7 @@ public class Week3 {
         java.util.Date d= new java.util.Date();
         System.out.println(d); //Mon Oct 18 09:43:19 ALMT 2021
 
-        d.setTime(1000000000);
+        d.setTime(163765784);
         System.out.println(d); //Mon Jan 12 19:46:40 ALMT 1970
 
         Random random1=new Random(3);

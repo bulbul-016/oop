@@ -1,7 +1,10 @@
+//week2
+
 import java.util.Scanner;
 
 public class SimpleCircle {
     public static void main(String[] args) {
+
         Circle circle1=new Circle();
         System.out.println("The area of the circle of radius "
             + circle1.radius+" is "+circle1.getArea());
@@ -25,8 +28,8 @@ public class SimpleCircle {
         r1.width=2;
         System.out.println(r1.width); //2
 
-        Rectangle r2;
-        //System.out.println(r2.width);
+        Rectangle r2=new Rectangle(16);
+        System.out.println(r2.width);
     }
     
 }
@@ -39,7 +42,7 @@ class Circle{
     }
 
     Circle(double newRadius){
-        radius=newRadius;
+        this.radius=newRadius;
     }
 
     double getArea(){
@@ -59,9 +62,9 @@ class Circle{
 class Rectangle{
     int width;
 
-    //Rectangle(int w){
-    //    width=w;
-    //}
+    Rectangle(int w){
+       width=w;
+    }
 
     Rectangle(){
         width=3;
