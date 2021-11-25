@@ -9,3 +9,4 @@ public class TestStackOfIntegers {
         System.out.print(stack.pop() + " ");  
     }
   }
+  
