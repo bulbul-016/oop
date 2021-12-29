@@ -6,8 +6,8 @@ class MyFirstProgram {
         System.out.println(++x); //6
         System.out.println(x);   //6
 
-        Scanner input= new Scanner(System.in);
-        int y= input.nextInt();  //9
+        Scanner input = new Scanner(System.in);
+        int y = input.nextInt();  //9
 
         String str=input.next();   //onbes
 
@@ -18,6 +18,9 @@ class MyFirstProgram {
                 System.out.println(i);
             }
         }
+
+        System.out.print(x+ "\n");
+        System.out.println("ok");
     }
     
 }

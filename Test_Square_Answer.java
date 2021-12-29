@@ -3,7 +3,7 @@ public class Test_Square_Answer {
 
     public static void main (String[] args) {
 		double side1 = 5.63;
-		Square square1 = new Square(__________);
+		Square square1 = new Square(side1);
 		System.out.println("square area is " + square1.getArea());
 		System.out.println("square perimeter is " + square1.getPerimeter());
 
@@ -12,11 +12,11 @@ public class Test_Square_Answer {
 		System.out.println("square area is " + square2.getArea());
 		System.out.println("square perimeter is " + square2.getPerimeter());
 
-		printBiggerSquareArea(__________, __________);
+		printBiggerSquareArea(square1, square2);
 	}
 
-    public static __________ printBiggerSquareArea(Square s1, Square s2){
- 	    if(s1.getArea()__________s2.getArea())
+    public static void printBiggerSquareArea(Square s1, Square s2){
+ 	    if(s1.getArea()>s2.getArea())
  		    System.out.println(s1.getArea());
  	    else
  		    System.out.println(s2.getArea());
@@ -27,9 +27,9 @@ public class Test_Square_Answer {
 class Square {
 
 	private double side;
-	private __________ int numberOfObjects;
+	private static int numberOfObjects;
 
-	public __________(double side) {
+	public Square(double side) {
 		this.side = side;
 	}
 
@@ -38,15 +38,15 @@ class Square {
 	}
 
 	public double getPerimeter() {
-		return __________ * side;
+		return 4 * side;
 	}
 
 	public void setSide(double side) {
-		__________.side = side;
+		this.side = side;
 	}
 
 	public static int getNumberOfObjects() { 
-		return __________;    
+		return numberOfObjects;    
 	}
 	
 } 
